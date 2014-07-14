@@ -1,0 +1,13 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Test Templatize</title>    
+<script type="text/javascript" src="templatize.js"></script>
+</head>
+<body>
+<script>
+var templateStr = "<table><tr><th>Name</th><th>Age</th></tr>[people:i[<tr><td>{{people[i].name}}</td><td>{{people[i].age}}</td></tr>]]</table>";
+document.writeln(templatize(templateStr)({people:[{name:"Bloc",age:35},{name:"Aron",age:"25"},{name:"Ken",age:35},{name:"Shah",age:"28"}]}));
+</script>
+</body>
+</html>
