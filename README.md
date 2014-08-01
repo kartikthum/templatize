@@ -10,9 +10,9 @@ Included in the package is a templatize.js script file. At the moment, it
 could either be used as a node module or on the browser.
 
 Here's a simple sample of how to use it - 
-
+```
 var templateStr = "<table><tr><th>Name</th><th>Age</th></tr>[people:i[<tr><td>{{people[i].name}}</td><td>{{people[i].age}}</td></tr>]]</table>";
-
+```
 Now, templatize(templateStr)({people:[{name:"Bloc",age:35},{name:"Aron",age:"25"}]}); 
 would return -
 
